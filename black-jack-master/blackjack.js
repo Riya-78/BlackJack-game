@@ -43,7 +43,7 @@ function startGame() {
     hidden = deck.pop();
     dealerSum += getValue(hidden);
     dealerAceCount += checkAce(hidden);
-    console.log(hidden);
+    // console.log(hidden);
     // console.log(dealerSum);
     while (dealerSum < 17) {
         //<img src="./cards/4-C.png">
@@ -123,7 +123,7 @@ function getValue(card) {
     let data = card.split("-"); // "4-C" -> ["4", "C"]
     let value = data[0];
 
-    if (isNaN(value)) { //A J Q K
+    if (isNaN(value)) { //A J Q K 
         if (value == "A") {
             return 11;
         }
